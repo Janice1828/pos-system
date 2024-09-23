@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Receipt</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container cash-receipt-container">
+      <div
+        class="d-flex justify-content-between flex-column flex-lg-row align-items-center gap-2 mb-2"
+      >
+        <div class="text-center">
+          <img
+            src="../Images/Emblem_of_Nepal.svg"
+            style="width: 100px"
+            alt=""
+          />
+          <div class="d-flex mt-2">
+            <label for="">रसिद नं.</label
+            ><input
+              style="
+                border: none;
+                outline: none;
+                border-bottom: 1px dotted !important;
+                padding-left: 5px;
+              "
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="text-center">
+          <h5 class="fw-bold">सूर्योदय नगरपालिका</h5>
+          <h5 class="fw-bold">नगरकार्यपालिकाको कार्यालय</h5>
+          <h6 class="fw-bold">फिक्कल, इलाम</h6>
+          <h6 class="fw-bold">
+            कृषिजन्य वस्तुको व्यवसायिक कारोबारमा लाग्ने कर असुली
+          </h6>
+          <h5 class="fw-bold">नगदी-रसिद</h5>
+        </div>
+        <div class="d-flex align-items-center">
+          <label>मिति</label>
+          <input
+            type="text"
+            style="
+              border: none;
+              outline: none;
+              border-bottom: 1px dotted !important;
+              padding-left: 5px;
+            "
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mb-2 flex-column flex-sm-row">
+        <div>
+          <label>श्री :</label>
+          <input
+            type="text"
+            style="
+              border: none;
+              outline: none;
+              border-bottom: 1px dotted !important;
+            "
+          />
+        </div>
+        <div>
+          <label>ठेगाना :</label>
+          <input
+            type="text"
+            style="
+              border: none;
+              outline: none;
+              border-bottom: 1px dotted !important;
+            "
+          />
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered border-dark">
+          <thead>
+            <tr>
+              <th style="width: 50px" class="text-center">क्र.सं.</th>
+              <th class="text-center">विवरण/वापत</th>
+              <th class="text-center">आम्दानी संकेत नं.</th>
+              <th class="text-center">रकम</th>
+              <th class="text-center">कैफियत</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2"><input type="text" /></td>
+              <td rowspan="2"><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex justify-content-end px-2">
+                  <span>जम्मा</span>
+                </div>
+              </td>
+              <td colspan="2"><input type="text" /></td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                <div class="d-flex gap-2">
+                  <label for="">अक्षरेपी रु.</label>
+                  <input
+                    class="w-50"
+                    type="text"
+                    style="
+                      border: none;
+                      outline: none;
+                      border-bottom: 1px dotted;
+                      padding-left: 5px;
+                    "
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0">रकम बुझाउनेको सही :</p>
+                  <p class="mb-0">रकम बुझ्नेको सही :</p>
+                  <p></p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

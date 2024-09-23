@@ -26,7 +26,8 @@ table tr td:first-child {
 .weekly-market-container div {
   color: #24267c;
 }
-.income-receipt-container table tbody tr td input {
+.income-receipt-container table tbody tr td input,
+.cash-receipt-container table tbody tr td input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -38,8 +39,15 @@ table tr td:first-child {
 }
 .income-receipt-container table tbody tr td,
 .income-receipt-container table thead tr th,
-.income-receipt-container label {
-  font-size: 14px;
+.income-receipt-container label,
+.cash-receipt-container table thead tr th,
+.cash-receipt-container table tbody tr td,
+.cash-receipt-container label,
+.cash-receipt-container table tbody tr td div p {
+  font-size: 14px !important;
+}
+.cash-receipt-container table tbody tr:nth-child(1) td {
+  height: 150px;
 }
 @media screen and (max-width: 768px) {
   .sidebar-h-100-vh {
