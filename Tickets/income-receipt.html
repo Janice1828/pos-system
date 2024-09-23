@@ -14,17 +14,37 @@
   </head>
   <body>
     <div class="container income-receipt-container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div
+        class="d-flex justify-content-between align-items-lg-end align-items-center mb-2 flex-lg-row flex-column"
+      >
         <div>
-          <img style="width: 70px" src="../Images/Emblem_of_Nepal.svg" alt="" />
-          <p class="mb-0">रशिद न.</p>
+          <div class="d-flex justify-content-center d-lg-block">
+            <img
+              style="width: 100px"
+              src="../Images/Emblem_of_Nepal.svg"
+              alt=""
+            />
+          </div>
+          <p class="mb-0 mt-2">
+            <label for="">रशिद न.</label
+            ><input
+              type="text"
+              style="
+                border: none;
+                outline: none;
+                border-bottom: 1px dotted;
+                padding-left: 5px;
+              "
+            />
+          </p>
         </div>
         <div class="text-center">
           <p class="mb-0">नेपाल सरकार</p>
           <p class="mb-0">सूर्योदय नगरपालिका</p>
-          <h5 class="fw-bold">नगर कार्यपालिकाको कार्यालय</h5>
+          <h5 class="fw-bold mb-0">नगर कार्यपालिकाको कार्यालय</h5>
           <p class="mb-0">फिक्कल, इलाम</p>
-          <h5 class="fw-bold">आम्दानी-रसिद</h5>
+          <h5 class="fw-bold mb-0">आम्दानी-रसिद</h5>
+          <p>(फोहोरमैला संकलन गर्ने प्रयोजनको लागि)</p>
         </div>
         <div>
           <label for="">मिति:</label>
@@ -33,72 +53,82 @@
             style="
               outline: none;
               border: none;
-              border-bottom: 1px solid;
+              border-bottom: 1px dotted;
               padding-left: 5px;
             "
           />
         </div>
       </div>
 
-      <div class="d-flex">
-        <label for="">सूर्योदय नगरपालिका वडा नं.</label>
-        <input
-          type="text"
-          style="
-            outline: none;
-            border: none;
-            padding-left: 5px;
-            border-bottom: 1px solid !important;
-          "
-        />
-        <label for="">निवासी श्री</label>
-        <input
-          type="text"
-          style="
-            outline: none;
-            border: none;
-            padding-left: 5px;
-            border-bottom: 1px solid !important;
-          "
-        />
-        <label for="">बाट जम्मा रु.</label>
-        <input
-          type="text"
-          style="
-            outline: none;
-            border: none;
-            padding-left: 5px;
-            border-bottom: 1px solid !important;
-          "
-        />
+      <div class="d-flex flex-column flex-lg-row">
+        <div>
+          <label for="">सूर्योदय नगरपालिका वडा नं.</label>
+          <input
+            type="text"
+            style="
+              outline: none;
+              border: none;
+              padding-left: 5px;
+              border-bottom: 1px dotted !important;
+            "
+          />
+        </div>
+        <div class="d-flex">
+          <label for="">निवासी श्री</label>
+          <input
+            type="text"
+            style="
+              outline: none;
+              border: none;
+              padding-left: 5px;
+              border-bottom: 1px dotted !important;
+            "
+          />
+        </div>
+        <div>
+          <label for="">बाट जम्मा रु.</label>
+          <input
+            type="text"
+            style="
+              outline: none;
+              border: none;
+              padding-left: 5px;
+              border-bottom: 1px dotted !important;
+            "
+          />
+        </div>
       </div>
-      <div class="d-flex">
-        <p class="mb-0">अक्षरेपी</p>
+      <div class="d-flex mb-3 mt-2 align-items-center">
+        <label class="mb-0">अक्षरेपी</label>
         <input
           type="text"
-          class="w-100"
+          class="w-75"
           style="
             outline: none;
             border: none;
             padding-left: 5px;
-            border-bottom: 1px solid !important;
+            border-bottom: 1px dotted !important;
           "
         />
-        <p class="mb-0">बापत प्राप्त भयो</p>
+        <label class="mb-0">बापत प्राप्त भयो</label>
       </div>
       <div></div>
       <div class="table-responsive">
         <table class="table table-bordered border-dark">
           <thead>
             <tr>
-              <th rowspan="2">शीर्षक न.</th>
-              <th rowspan="2">विवरण</th>
-              <th colspan="3">रकम</th>
+              <th rowspan="2" class="text-center">
+                <span style="position: relative; bottom: 20px">शीर्षक न.</span>
+              </th>
+              <th rowspan="2" class="text-center">
+                <span style="position: relative; bottom: 20px">विवरण</span>
+              </th>
+              <th colspan="3" class="text-center">रकम</th>
             </tr>
             <tr>
-              <th>नगद</th>
-              <th>भौचर</th>
-              <th>जम्मा</th>
+              <th class="text-center">नगद</th>
+              <th class="text-center">भौचर</th>
+              <th class="text-center">जम्मा</th>
             </tr>
           </thead>
           <tbody>
@@ -111,7 +141,7 @@
             </tr>
             <tr>
               <td></td>
-              <td>जम्मा</td>
+              <td class="text-end px-2">जम्मा</td>
               <td><input type="text" /></td>
               <td><input type="text" /></td>
               <td><input type="text" /></td>
@@ -119,9 +149,9 @@
           </tbody>
         </table>
       </div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between flex-column flex-sm-row gap-2">
         <div>
-          <p class="mb-0">बुझाउने दस्तखत</p>
+          <label class="mb-0 d-block">बुझाउने दस्तखत</label>
           <input
             type="text"
             style="
@@ -132,9 +162,11 @@
             "
           />
         </div>
-        <div>
-          <div class="d-flex align-items-center">
-            <p class="mb-0">बुझिलिनेको सही</p>
+        <div class="d-flex d-sm-block flex-column gap-2">
+          <div
+            class="d-flex align-items-sm-center align-items-start flex-column flex-sm-row"
+          >
+            <label class="mb-0">बुझिलिनेको सही</label>
             <input
               type="text"
               style="
@@ -145,8 +177,8 @@
               "
             />
           </div>
-          <div class="d-flex align-items-center">
-            <p class="mb-0">दर्जा</p>
+          <div class="d-flex align-items-start flex-column flex-sm-row">
+            <label class="mb-0">दर्जा</label>
             <input
               type="text"
               style="
