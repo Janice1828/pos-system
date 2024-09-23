@@ -49,8 +49,19 @@ table tr td:first-child {
 .cash-receipt-container table tbody tr:nth-child(1) td {
   height: 150px;
 }
+.antu-view-tower-container input {
+  padding-left: 5px;
+}
+.antu-view-tower-container {
+  font-weight: 600;
+}
 @media screen and (max-width: 768px) {
   .sidebar-h-100-vh {
     height: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .antu-view-tower-container {
+    width: 100% !important;
   }
 }
