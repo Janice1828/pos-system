@@ -6,7 +6,7 @@
   font-family: "Work Sans", sans-serif;
 }
 .bg-custom-dark {
-  background: #1a2035;
+  background: #505de6 !important;
 }
 .sidebar-h-100-vh {
   height: 100vh;
@@ -14,7 +14,18 @@
 .sidebar-list-color {
   color: #b9babf;
 }
-
+table tr td {
+  padding: 12px 0px !important;
+}
+table tr th:first-child,
+table tr td:first-child {
+  padding-left: 20px !important;
+}
+.weekly-market-container p,
+.weekly-market-container label,
+.weekly-market-container div {
+  color: #24267c;
+}
 @media screen and (max-width: 768px) {
   .sidebar-h-100-vh {
     height: 100%;
