@@ -109,7 +109,7 @@
               class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
             >
               <h5 class="text-center">e-Ticketing</h5>
-              <h6 class="px-3">Main</h6>
+              <h6 class="px-3" style="font-weight: 600">Main</h6>
               <ul class="nav flex-column">
                 <li class="nav-item">
                   <a
@@ -121,7 +121,9 @@
                     <span> Dashboard</span>
                   </a>
                 </li>
-                <h6 class="px-3 sidebar-list-color">Shree Antu</h6>
+                <h6 class="px-3 sidebar-list-color" style="font-weight: 600">
+                  Shree Antu
+                </h6>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
@@ -217,7 +219,9 @@
                     <span class="sidebar-list-color"> Device Reports </span>
                   </a>
                 </li>
-                <h6 class="px-3 sidebar-list-color">scroll news</h6>
+                <h6 class="px-3 sidebar-list-color" style="font-weight: 600">
+                  scroll news
+                </h6>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
@@ -232,141 +236,44 @@
           </div>
         </div>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-5">
+        <main class="col-md-9 col-lg-10">
           <div
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-3 mb-4 border-bottom"
+            class="d-flex px-md-5 justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-3 mb-4 border-bottom"
           >
             <div></div>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Share
-                </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Export
-                </button>
-              </div>
+            <div class="dropdown">
               <button
+                class="border-0 bg-transparent dropdown-toggle"
                 type="button"
-                class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                This week
+                <i class="fa-regular fa-user"></i>
               </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    type="button"
+                  >
+                    <span>Profile</span>
+                    <i class="fa-solid fa-user" style="color: #1a2035"></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    type="button"
+                  >
+                    <span> Log Out </span
+                    ><i class="fa-solid fa-right-from-bracket text-danger"></i>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="table-responsive small">
-            <table class="table table-striped table-sm">
-              <thead class="table-dark">
-                <tr>
-                  <th scope="col" class="py-2">#</th>
-                  <th scope="col" class="py-2">Name</th>
-                  <th scope="col" class="py-2">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="width: 300px">1</td>
-                  <td style="width: 570px">placeholder</td>
-                  <td class="d-flex gap-2">
-                    <a href="">
-                      <img
-                        src="../Images/edit.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        class=""
-                        src="../Images/delete.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>data</td>
-                  <td class="d-flex gap-2">
-                    <a href="">
-                      <img
-                        src="../Images/edit.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        src="../Images/delete.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>information</td>
-                  <td class="d-flex gap-2">
-                    <a href="">
-                      <img
-                        src="../Images/edit.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        src="../Images/delete.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>information</td>
-                  <td class="d-flex gap-2">
-                    <a href="">
-                      <img
-                        src="../Images/edit.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        src="../Images/delete.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>information</td>
-                  <td class="d-flex gap-2">
-                    <a href="">
-                      <img
-                        src="../Images/edit.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        src="../Images/delete.png"
-                        alt=""
-                        style="height: 15px"
-                      />
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="px-md-5">
+            <h5>Welcome To Dashboard</h5>
           </div>
         </main>
       </div>
