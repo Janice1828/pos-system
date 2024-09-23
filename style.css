@@ -8,3 +8,15 @@
 .bg-custom-dark {
   background: #1a2035;
 }
+.sidebar-h-100-vh {
+  height: 100vh;
+}
+.sidebar-list-color {
+  color: #b9babf;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-h-100-vh {
+    height: 100%;
+  }
+}
