@@ -8,6 +8,9 @@
 .bg-custom-dark {
   background: #505de6 !important;
 }
+.active-custom-color {
+  color: #505de6 !important;
+}
 .sidebar-h-100-vh {
   height: 100vh;
 }
@@ -15,7 +18,7 @@
   color: #b9babf;
 }
 table tr td {
-  padding: 12px 0px !important;
+  padding: 8px 0px !important;
 }
 table tr th:first-child,
 table tr td:first-child {
@@ -74,5 +77,24 @@ table tr td:first-child {
   outline: 0 !important;
 }
 .registration-form-container {
-  box-shadow: 0px 0px 10px 1px #dadada;
+  box-shadow: 0px -5px 20px 0px #dadada;
+}
+.dt-length {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.category-tbl tbody tr:nth-child(even) td {
+  background-color: #ebebeb;
+}
+.dt-input {
+  outline: none;
+}
+.dt-paging .current {
+  background: #505de6 !important;
+  border: 0 !important;
+}
+
+.dt-layout-end {
+  color: #fff !important;
 }
