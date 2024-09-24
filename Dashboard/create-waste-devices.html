@@ -207,17 +207,17 @@
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     href="./waste-device.html"
                   >
-                    <i class="fa-solid fa-laptop sidebar-list-color"></i>
-                    <span class="sidebar-list-color"> Waste Devices </span>
+                    <i class="fa-solid fa-laptop"></i>
+                    <span> Waste Devices </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="#"
+                    href="./waste-users.html"
                   >
-                    <i class="fa-solid fa-user-group"></i>
-                    <span> Waste Users </span>
+                    <i class="fa-solid fa-user-group sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Waste Users </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -285,33 +285,7 @@
           <div class="px-md-5">
             <div class="">
               <div class="mb-3 d-flex justify-content-between">
-                <a
-                  href="./create-waste-users.html"
-                  class="text-decoration-none d-flex gap-2 align-items-center"
-                >
-                  <div class="rounded-1 bg-custom-dark">
-                    <i
-                      class="fa-solid fa-plus d-flex justify-content-center align-items-center"
-                      style="
-                        color: #fff;
-                        height: 40px;
-                        width: 40px;
-                        font-size: 25px;
-                      "
-                    ></i>
-                  </div>
-                  <div>
-                    <h6
-                      class="mb-0 text-dark"
-                      style="font-weight: 600; font-size: 16px"
-                    >
-                      Waste Users
-                    </h6>
-                    <p class="mb-0" style="color: #b9babf; font-size: 14px">
-                      Waste Users Details
-                    </p>
-                  </div>
-                </a>
+                <div></div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb d-flex align-items-center">
                     <li class="breadcrumb-item">
@@ -329,57 +303,42 @@
                       aria-current="page"
                       style="font-size: 12px"
                     >
-                      Waste Users
+                      Create Waste Device
                     </li>
                   </ol>
                 </nav>
               </div>
             </div>
-            <div class="table-responsive small category-tbl">
-              <table class="" id="myTable">
-                <thead>
-                  <tr>
-                    <th class="py-2 bg-custom-dark text-light text-start">#</th>
-                    <th class="py-2 bg-custom-dark text-light px-0">
-                      Customer Name
-                    </th>
-                    <th class="py-2 bg-custom-dark text-light text-start px-0">
-                      Signal Number
-                    </th>
-                    <th class="py-2 bg-custom-dark text-light px-0">Address</th>
-                    <th class="py-2 bg-custom-dark text-light px-0">
-                      Company Name
-                    </th>
-                    <th class="py-2 bg-custom-dark text-light px-0">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-start">1</td>
-                    <td>Jenish Limbu</td>
-                    <td class="text-start">129032</td>
-                    <td>Baneshwor</td>
-                    <td>Softech Foundation</td>
-                    <td class="d-flex gap-3">
-                      <a href="">
-                        <img
-                          src="../Images/edit.png"
-                          alt=""
-                          style="height: 17px"
-                        />
-                      </a>
-                      <a href="#">
-                        <img
-                          class=""
-                          src="../Images/delete.png"
-                          alt=""
-                          style="height: 17px"
-                        />
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="card px-5 pt-5 pb-5">
+              <form class="create-form-container">
+                <div class="row mb-3">
+                  <div class="col-md-6 mb-3">
+                    <label for="first-name" class="form-label"
+                      >First Name</label
+                    >
+                    <input type="text" class="form-control" id="first-name" />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" />
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-success mt-3 px-3 py-1">Create</button>
+                </div>
+              </form>
             </div>
           </div>
         </main>

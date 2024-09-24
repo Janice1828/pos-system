@@ -72,7 +72,8 @@ table tr td:first-child {
 }
 
 .registration-form-container input:focus,
-.registration-form-container select:focus {
+.registration-form-container select:focus,
+.create-form-container input:focus {
   box-shadow: none !important;
   outline: 0 !important;
 }
