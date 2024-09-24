@@ -91,10 +91,5 @@ table tr td:first-child {
   outline: none;
 }
 .dt-paging .current {
-  background: #505de6 !important;
   border: 0 !important;
-}
-
-.dt-layout-end {
-  color: #fff !important;
 }
