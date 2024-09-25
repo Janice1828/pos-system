@@ -15,6 +15,12 @@
       rel="stylesheet"
       href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div
@@ -130,7 +136,7 @@
                 </li>
 
                 <h6
-                  class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0 mt-2"
+                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2"
                   style="font-weight: 600"
                 >
                   SetUp
@@ -139,10 +145,10 @@
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     aria-current="page"
-                    href="./system-setup.html"
+                    href="#"
                   >
-                    <i class="fa-solid fa-computer sidebar-list-color"></i
-                    ><span class="sidebar-list-color"> System Setup</span>
+                    <i class="fa-solid fa-computer"></i
+                    ><span> System Setup</span>
                   </a>
                 </li>
 
@@ -194,7 +200,7 @@
                   </a>
                 </li>
                 <h6
-                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2"
+                  class="px-3 sidebar-title sidebar-title-bg sidebar-list-color py-2 mb-0 mt-2"
                   style="font-weight: 600"
                 >
                   Waste
@@ -219,11 +225,11 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    class="nav-link d-flex sidebar-list-color align-items-center gap-2 text-light"
                     href="./waste-device.html"
                   >
-                    <i class="fa-solid fa-laptop"></i>
-                    <span> Waste Devices </span>
+                    <i class="fa-solid fa-laptop sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Waste Devices </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -305,27 +311,35 @@
           </div>
           <div class="px-md-5 px-3">
             <div class="">
-              <div
-                class="mb-3 d-flex justify-content-between flex-column flex-lg-row gap-3 gap-lg-0"
-              >
-                <div class="d-flex gap-2 align-items-center">
-                  <div
-                    class="bg-custom-dark rounded-1 d-flex align-items-center justify-content-center p-2"
+              <div class="mb-3 d-flex justify-content-between">
+                <div class="">
+                  <a
+                    href="./create-system-setup.html"
+                    class="text-decoration-none d-flex gap-2 align-items-center"
                   >
-                    <img
-                      src="../Images/icons8-forward-arrow-50.png"
-                      alt=""
-                      style="height: 25px"
-                    />
-                  </div>
-                  <div>
-                    <h6 class="mb-0" style="font-weight: 600; font-size: 16px">
-                      Tikabata Rai, Revenue Section, 02755423
-                    </h6>
-                    <p class="mb-0" style="color: #b9babf; font-size: 14px">
-                      Waste Device Details
-                    </p>
-                  </div>
+                    <div class="rounded-1 bg-custom-dark">
+                      <i
+                        class="fa-solid fa-plus d-flex justify-content-center align-items-center"
+                        style="
+                          color: #fff;
+                          height: 40px;
+                          width: 40px;
+                          font-size: 25px;
+                        "
+                      ></i>
+                    </div>
+                    <div>
+                      <h6
+                        class="mb-0 text-dark"
+                        style="font-weight: 600; font-size: 16px"
+                      >
+                        System Setup
+                      </h6>
+                      <p class="mb-0" style="color: #b9babf; font-size: 14px">
+                        System Setup Details
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb d-flex align-items-center">
@@ -344,29 +358,13 @@
                       aria-current="page"
                       style="font-size: 12px"
                     >
-                      Tikabata Rai, Revenue Section, 02755423
+                      System Setup
                     </li>
                   </ol>
                 </nav>
               </div>
             </div>
-            <div class="card rounded-1 pb-3">
-              <div class="card-body row gx-2 align-items-center">
-                <div class="col-12 col-sm-6 col-lg-5">
-                  <label for="" style="font-size: 15px">Date From</label>
-                  <input type="date" class="form-control" />
-                </div>
-                <div class="col-12 col-sm-6 col-lg-5">
-                  <label for="" style="font-size: 15px">Date To</label>
-                  <input type="date" class="form-control" />
-                </div>
-                <div class="col-5 col-lg-2">
-                  <button class="w-100 btn bg-custom-dark text-light mt-4">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
+
             <div class="table-responsive small category-tbl mt-4 bg-light p-2">
               <table class="table table-striped-columns" id="myTable">
                 <thead>
@@ -375,24 +373,24 @@
                       S.No.
                     </th>
                     <th class="py-2 bg-custom-dark text-light text-start">
-                      Bill Date
+                      Name
                     </th>
                     <th class="py-2 bg-custom-dark text-light text-start">
-                      Info
+                      Phone
                     </th>
-                    <th class="py-2 bg-custom-dark text-light">Month</th>
+                    <th class="py-2 bg-custom-dark text-light">Email</th>
                     <th class="py-2 bg-custom-dark text-light text-start">
-                      Total
+                      Address
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="text-start">1</td>
-                    <td class="text-start">2024-12-2</td>
-                    <td>News</td>
-                    <td>October</td>
-                    <td class="text-start">1200</td>
+                    <td class="text-start">Softech Foundation</td>
+                    <td class="text-start">+5121237</td>
+                    <td>careers@softech.org</td>
+                    <td class="text-start">Baneshwor</td>
                   </tr>
                 </tbody>
               </table>
@@ -423,25 +421,12 @@
       src="https://kit.fontawesome.com/8508bb06d2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.dataTables.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
   </body>
 </html>
 <script>
-  new DataTable("#myTable", {
-    layout: {
-      topStart: {
-        buttons: ["excel", "pdf", "print"],
-      },
-    },
+  $(document).ready(function () {
+    $("#myTable").DataTable();
   });
 </script>
 <script src="../script.js"></script>

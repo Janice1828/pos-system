@@ -133,3 +133,23 @@ table tr td {
     text-align: left !important;
   }
 }
+/* .dt-paging-button {
+  background-color: red !important;
+  color: #fff !important;
+}
+div.dt-container .dt-paging .dt-paging-button {
+  color: #fff !important;
+}
+div.dt-container .dt-paging .dt-paging-button.current {
+  color: #fff;
+}
+.dt-paging button {
+  color: #fff !important;
+}
+.current {
+  font-size: 20px !important;
+  color: #ffffff !important;
+} */
+.sidebar-title-bg {
+  background: #6c73c3;
+}
