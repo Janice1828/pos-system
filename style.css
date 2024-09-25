@@ -125,3 +125,11 @@ table tr td {
 .waste-device-report-container .footer p {
   font-size: 13px;
 }
+@media screen and (max-width: 767px) {
+  div.dt-container div.dt-layout-row:not(.dt-layout-table) div.dt-layout-cell {
+    text-align: left !important;
+  }
+  div.dt-buttons {
+    text-align: left !important;
+  }
+}
