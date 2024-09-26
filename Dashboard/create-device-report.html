@@ -111,7 +111,12 @@
           class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light sidebar-h-100-vh"
         >
           <div
-            class="offcanvas-md offcanvas-end bg-custom-dark"
+            class="offcanvas-md offcanvas-end bg-custom-dark position-fixed"
+            style="
+              height: 100%;
+              overflow-y: auto !important;
+              width: inherit !important;
+            "
             tabindex="-1"
             id="sidebarMenu"
             aria-labelledby="sidebarMenuLabel"

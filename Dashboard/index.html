@@ -96,11 +96,14 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div
-          class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light sidebar-h-100-vh"
-        >
+        <div class="sidebar bg-custom-dark col-md-3 col-lg-2 p-0 text-light">
           <div
-            class="offcanvas-md offcanvas-end bg-custom-dark"
+            class="offcanvas-md offcanvas-end bg-custom-dark position-fixed"
+            style="
+              height: 100%;
+              overflow-y: auto !important;
+              width: inherit !important;
+            "
             tabindex="-1"
             id="sidebarMenu"
             aria-labelledby="sidebarMenuLabel"
@@ -120,16 +123,14 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div
-              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
-            >
+            <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3">
               <h6
                 class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0"
                 style="font-weight: 600"
               >
                 Main
               </h6>
-              <ul class="nav flex-column">
+              <ul class="nav flex-column list-group-flush scrollarea">
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
@@ -252,6 +253,36 @@
                   >
                     <i class="fa-solid fa-list sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Device Reports </span>
+                  </a>
+                </li>
+                <h6
+                  class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                  style="font-weight: 600"
+                >
+                  Krishi
+                </h6>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="./scroll-news.html"
+                  >
+                    <i class="fa-solid fa-newspaper sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Scroll News </span>
+                  </a>
+                </li>
+                <h6
+                  class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                  style="font-weight: 600"
+                >
+                  Haat Bazaar
+                </h6>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="./scroll-news.html"
+                  >
+                    <i class="fa-solid fa-newspaper sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Scroll News </span>
                   </a>
                 </li>
                 <h6
