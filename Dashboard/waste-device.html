@@ -115,12 +115,26 @@
             id="sidebarMenu"
             aria-labelledby="sidebarMenuLabel"
           >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-center text-light"
+                id="sidebarMenuLabel"
+              >
+                e-Ticketing
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-light"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
             <div
               class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
             >
-              <h5 class="text-center text-light">e-Ticketing</h5>
               <h6
-                class="px-3 sidebar-list-color sidebar-title-bg py-2 mt-3 mb-0"
+                class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0"
                 style="font-weight: 600"
               >
                 Main
@@ -386,22 +400,24 @@
                         View Report</a
                       >
                     </td>
-                    <td class="d-flex gap-3">
-                      <a href="">
-                        <img
-                          src="../Images/edit.png"
-                          alt=""
-                          style="height: 17px"
-                        />
-                      </a>
-                      <a href="#">
-                        <img
-                          class=""
-                          src="../Images/delete.png"
-                          alt=""
-                          style="height: 17px"
-                        />
-                      </a>
+                    <td class="gap-3 align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="">
+                          <img
+                            src="../Images/edit.png"
+                            alt=""
+                            style="height: 17px"
+                          />
+                        </a>
+                        <a href="#">
+                          <img
+                            class=""
+                            src="../Images/delete.png"
+                            alt=""
+                            style="height: 17px"
+                          />
+                        </a>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
