@@ -133,23 +133,58 @@ table tr td {
     text-align: left !important;
   }
 }
-/* .dt-paging-button {
-  background-color: red !important;
-  color: #fff !important;
+.sidebar-title-bg {
+  background: #6c73c3;
 }
-div.dt-container .dt-paging .dt-paging-button {
-  color: #fff !important;
+.next:hover,
+.previous:hover,
+.first:hover,
+.last:hover {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
-div.dt-container .dt-paging .dt-paging-button.current {
-  color: #fff;
+.next:focus,
+.previous:focus,
+.first:focus,
+.last:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
-.dt-paging button {
+.dt-paging-button span,
+.dt-paging-button {
+  padding: 0px !important;
+  display: flex;
+  border-radius: 0 !important;
+  height: 32px !important;
+  width: 20px !important;
+  align-items: center;
+  justify-content: center;
+  width: 30px !important;
   color: #fff !important;
 }
 .current {
-  font-size: 20px !important;
-  color: #ffffff !important;
-} */
-.sidebar-title-bg {
-  background: #6c73c3;
+  background: #d1d1d1 !important;
+}
+.current:hover {
+  background-color: #505de6 !important;
+  color: #fff !important;
+}
+.next,
+.previous,
+.last,
+.first {
+  width: 60px !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  background: #505de6 !important;
+}
+.dt-paging nav {
+  display: flex;
+  gap: 5px !important;
+}
+#myTable_wrapper .current:hover {
+  color: white !important;
 }
