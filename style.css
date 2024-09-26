@@ -188,3 +188,6 @@ table tr td {
 #myTable_wrapper .current:hover {
   color: white !important;
 }
+.dt-layout-table {
+  margin: 25px 0px !important;
+}
