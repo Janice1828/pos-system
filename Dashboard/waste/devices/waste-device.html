@@ -10,10 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../../style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"
+      href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css"
     />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -104,9 +104,11 @@
       </div>
     </header>
 
-    <div class="container-fluid px-0">
-      <div class="row gx-0">
-        <div class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light sidebar-h-100-vh"
+        >
           <div
             class="offcanvas-md offcanvas-end bg-custom-dark position-fixed"
             style="
@@ -153,8 +155,9 @@
                     <span class="sidebar-list-color"> Dashboard</span>
                   </a>
                 </li>
+
                 <h6
-                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2 text-light"
+                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2 sidebar-list-color"
                   style="font-weight: 600"
                 >
                   SetUp
@@ -163,13 +166,12 @@
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     aria-current="page"
-                    href="#"
+                    href="./system-setup.html"
                   >
-                    <i class="fa-solid fa-computer"></i
-                    ><span> System Setup</span>
+                    <i class="fa-solid fa-computer sidebar-list-color"></i
+                    ><span class="sidebar-list-color"> System Setup</span>
                   </a>
                 </li>
-
                 <h6
                   class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0 mt-2"
                   style="font-weight: 600"
@@ -243,11 +245,11 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link d-flex sidebar-list-color align-items-center gap-2 text-light"
-                    href="./waste-device.html"
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="#"
                   >
-                    <i class="fa-solid fa-laptop sidebar-list-color"></i>
-                    <span class="sidebar-list-color"> Waste Devices </span>
+                    <i class="fa-solid fa-laptop"></i>
+                    <span> Waste Devices </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -288,12 +290,9 @@
           </div>
         </div>
 
-        <main
-          class="col-md-9 ms-sm-auto col-lg-10 waste-device-report-container"
-          style="background: #f3f3f3"
-        >
+        <main class="col-md-9 ms-sm-auto col-lg-10" style="background: #f3f3f3">
           <div
-            class="d-flex bg-light px-md-5 justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-3 mb-4 border-bottom"
+            class="d-flex px-md-5 justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-3 mb-4 border-bottom"
           >
             <div></div>
             <div class="dropdown">
@@ -327,38 +326,36 @@
               </ul>
             </div>
           </div>
-          <div class="px-md-5 px-3">
+          <div class="px-md-5">
             <div class="">
               <div class="mb-3 d-flex justify-content-between">
-                <div class="">
-                  <a
-                    href="./create-system-setup.html"
-                    class="text-decoration-none d-flex gap-2 align-items-center"
-                  >
-                    <div class="rounded-1 bg-custom-dark">
-                      <i
-                        class="fa-solid fa-plus d-flex justify-content-center align-items-center"
-                        style="
-                          color: #fff;
-                          height: 40px;
-                          width: 40px;
-                          font-size: 25px;
-                        "
-                      ></i>
-                    </div>
-                    <div>
-                      <h6
-                        class="mb-0 text-dark"
-                        style="font-weight: 600; font-size: 16px"
-                      >
-                        System Setup
-                      </h6>
-                      <p class="mb-0" style="color: #b9babf; font-size: 14px">
-                        System Setup Details
-                      </p>
-                    </div>
-                  </a>
-                </div>
+                <a
+                  href="./create-waste-devices.html"
+                  class="text-decoration-none d-flex gap-2 align-items-center"
+                >
+                  <div class="rounded-1 bg-custom-dark">
+                    <i
+                      class="fa-solid fa-plus d-flex justify-content-center align-items-center"
+                      style="
+                        color: #fff;
+                        height: 40px;
+                        width: 40px;
+                        font-size: 25px;
+                      "
+                    ></i>
+                  </div>
+                  <div>
+                    <h6
+                      class="mb-0 text-dark"
+                      style="font-weight: 600; font-size: 16px"
+                    >
+                      Waste Device
+                    </h6>
+                    <p class="mb-0" style="color: #b9babf; font-size: 14px">
+                      Waste Device Details
+                    </p>
+                  </div>
+                </a>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb d-flex align-items-center">
                     <li class="breadcrumb-item">
@@ -376,60 +373,66 @@
                       aria-current="page"
                       style="font-size: 12px"
                     >
-                      System Setup
+                      Waste Device
                     </li>
                   </ol>
                 </nav>
               </div>
             </div>
-
-            <div class="table-responsive small category-tbl mt-4 bg-light p-2">
+            <div class="table-responsive small category-tbl">
               <table class="table table-striped-columns" id="myTable">
                 <thead>
                   <tr>
+                    <th class="py-2 bg-custom-dark text-light text-start">#</th>
+                    <th class="py-2 bg-custom-dark text-light">Name</th>
                     <th class="py-2 bg-custom-dark text-light text-start">
-                      S.No.
+                      Info
                     </th>
-                    <th class="py-2 bg-custom-dark text-light text-start">
-                      Name
-                    </th>
-                    <th class="py-2 bg-custom-dark text-light text-start">
-                      Phone
-                    </th>
-                    <th class="py-2 bg-custom-dark text-light">Email</th>
-                    <th class="py-2 bg-custom-dark text-light text-start">
-                      Address
-                    </th>
+                    <th class="py-2 bg-custom-dark text-light">Report</th>
+                    <th class="py-2 bg-custom-dark text-light">Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="text-start">1</td>
-                    <td class="text-start">Softech Foundation</td>
-                    <td class="text-start">+5121237</td>
-                    <td>careers@softech.org</td>
-                    <td class="text-start">Baneshwor</td>
+                    <td>Tikabata Rai, Revenue Section, 023238</td>
+                    <td class="text-start">Information..</td>
+                    <td>
+                      <a
+                        href="./waste-device-report.html"
+                        class="btn btn-outline-success btn-sm"
+                      >
+                        View Report</a
+                      >
+                    </td>
+                    <td class="gap-3 align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="">
+                          <img
+                            src="../Images/edit.png"
+                            alt=""
+                            style="height: 17px"
+                          />
+                        </a>
+                        <a href="#">
+                          <img
+                            class=""
+                            src="../Images/delete.png"
+                            alt=""
+                            style="height: 17px"
+                          />
+                        </a>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="mt-3" style="width: inherit !important">
-            <div
-              class="position-fixed bottom-0 px-5 bg-light py-3"
-              style="width: inherit !important"
-            >
-              <div class="row footer">
-                <p class="mb-0 col-lg-6 col-12">copyright&copy; e-Ticketing</p>
-                <p class="mb-0 col-12 col-lg-6 d-flex justify-content-lg-end">
-                  Created By Softech Foundation
-                </p>
-              </div>
-            </div>
-          </div>
         </main>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -444,17 +447,7 @@
 </html>
 <script>
   $(document).ready(function () {
-    $("#myTable").DataTable({
-      language: {
-        paginate: {
-          previous:
-            '<span class="prev-icon bg-custom-dark text-light py-2 px-3">Prev</span>',
-          next: '<span class="next-icon bg-custom-dark text-light py-2 px-3">Next</span>',
-          current:
-            '<span class="next-icon bg-custom-dark text-light py-2 px-3">Next</span>',
-        },
-      },
-    });
+    $("#myTable").DataTable();
   });
 </script>
 <script src="../script.js"></script>
