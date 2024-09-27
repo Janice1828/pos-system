@@ -578,7 +578,18 @@
 </html>
 <script>
   $(document).ready(function () {
-    $("#myTable").DataTable();
+    $("#myTable").DataTable({
+      language: {
+        paginate: {
+          previous:
+            '<span class="prev-icon bg-custom-dark text-light py-2 px-3 cursor-pointer"><a href="#" class="text-decoration-none text-light">Prev</a></span>',
+          next: '<span class="next-icon bg-custom-dark text-light py-2 px-3 cursor-pointer"><a href="#" class="text-decoration-none text-light">Next</a></span>',
+          first:
+            '<span class="first-icon bg-custom-dark text-light py-2 px-3 cursor-pointer"><a href="#" class="text-decoration-none text-light">First</a></span>',
+          last: '<span class="last-icon bg-custom-dark text-light py-2 px-3 cursor-pointer"><a href="#" class="text-decoration-none text-light">Last</a></span>',
+        },
+      },
+    });
   });
 </script>
 <script src="../script.js"></script>
