@@ -144,15 +144,6 @@ table tr td {
   border: 0 !important;
   box-shadow: none !important;
 }
-.next:focus,
-.previous:focus,
-.first:focus,
-.last:focus {
-  border: 0 !important;
-  outline: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
 .dt-paging-button span,
 .dt-paging-button {
   padding: 0px !important;
