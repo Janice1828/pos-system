@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../../style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"
@@ -100,7 +100,9 @@
 
     <div class="container-fluid px-0">
       <div class="row gx-0">
-        <div class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light">
+        <div
+          class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light sidebar-h-100-vh"
+        >
           <div
             class="offcanvas-md offcanvas-end bg-custom-dark position-fixed"
             style="
@@ -113,10 +115,24 @@
             id="sidebarMenu"
             aria-labelledby="sidebarMenuLabel"
           >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-center text-light"
+                id="sidebarMenuLabel"
+              >
+                e-Ticketing
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-light"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
             <div
               class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
             >
-              <h5 class="text-center text-light">e-Ticketing</h5>
               <h6
                 class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0"
                 style="font-weight: 600"
@@ -128,7 +144,7 @@
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     aria-current="page"
-                    href="./index.html"
+                    href="../../index.html"
                   >
                     <i class="fa-solid fa-chart-simple sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Dashboard</span>
@@ -136,7 +152,7 @@
                 </li>
 
                 <h6
-                  class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0 mt-2"
+                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2 sidebar-list-color"
                   style="font-weight: 600"
                 >
                   SetUp
@@ -145,15 +161,14 @@
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     aria-current="page"
-                    href="./system-setup.html"
+                    href="../../setup/system-setup.html"
                   >
                     <i class="fa-solid fa-computer sidebar-list-color"></i
-                    ><span class="sidebar-list-color"> System Setup</span>
+                    ><span class="sidebar-list-color"> System </span>
                   </a>
                 </li>
-
                 <h6
-                  class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0 mt-2"
+                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2 sidebar-list-color"
                   style="font-weight: 600"
                 >
                   Shree Antu
@@ -162,7 +177,7 @@
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
                     aria-current="page"
-                    href="./category-subcategory.html"
+                    href="../../shree-antu/category-subcategory/category-subcategory.html"
                   >
                     <i class="fa-solid fa-list sidebar-list-color"></i
                     ><span class="sidebar-list-color">
@@ -173,7 +188,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./devices.html"
+                    href="../../shree-antu/devices/devices.html"
                   >
                     <i
                       class="fa-solid fa-desktop sidebar-list-color sidebar-list-color"
@@ -184,7 +199,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./devices-report.html"
+                    href="../../shree-antu/devices-report/devices-report.html"
                   >
                     <i class="fa-solid fa-list sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Devices Reports </span>
@@ -193,14 +208,23 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./fiscal-report.html"
+                    href="../../shree-antu/fiscal-report/fiscal-report.html"
                   >
-                    <i class="fa-solid fa-list sidebar-list-color"></i>
+                    <i class="fa-solid fa-file sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Fiscal Report </span>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../shree-antu/ticket-information/index.html"
+                  >
+                    <i class="fa-solid fa-ticket sidebar-list-color"></i>
+                    <span class="sidebar-list-color">Ticket Information</span>
+                  </a>
+                </li>
                 <h6
-                  class="px-3 sidebar-title-bg py-2 mb-0 mt-2 text-light"
+                  class="px-3 sidebar-title sidebar-title-bg py-2 mb-0 mt-2 text-light"
                   style="font-weight: 600"
                 >
                   Waste
@@ -208,46 +232,168 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./tole.html"
+                    href="../tole/tole.html"
                   >
-                    <i class="fa-solid fa-list sidebar-list-color"></i>
+                    <i
+                      class="fa-solid fa-location-arrow sidebar-list-color"
+                    ></i>
                     <span class="sidebar-list-color"> Tole </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./waste-category.html"
+                    href="../../waste/category/waste-category.html"
                   >
                     <i class="fa-solid fa-list sidebar-list-color"></i>
-                    <span class="sidebar-list-color"> Waste Category </span>
+                    <span class="sidebar-list-color"> Category </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./waste-device.html"
+                    href="../devices/waste-device.html"
                   >
                     <i class="fa-solid fa-laptop"></i>
-                    <span> Waste Devices </span>
+                    <span class=""> Devices </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./waste-users.html"
+                    href="../../waste/users/waste-users.html"
                   >
                     <i class="fa-solid fa-user-group sidebar-list-color"></i>
-                    <span class="sidebar-list-color"> Waste Users </span>
+                    <span class="sidebar-list-color"> Users </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./device-report.html"
+                    href="../../waste/device-reports/device-report.html"
                   >
                     <i class="fa-solid fa-list sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Device Reports </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../waste/tax-payer-information/index.html"
+                  >
+                    <i class="fa-solid fa-circle-info sidebar-list-color"></i>
+                    <span class="sidebar-list-color">
+                      Tax Payer Information
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../waste/billing/index.html"
+                  >
+                    <i class="fa-solid fa-receipt sidebar-list-color"></i>
+                    <span class="sidebar-list-color">
+                      Billing Information
+                    </span>
+                  </a>
+                </li>
+                <h6
+                  class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                  style="font-weight: 600"
+                >
+                  Agriculture
+                </h6>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../agriculture/category/index.html"
+                  >
+                    <i class="fa-solid fa-list sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Category </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../agriculture/devices/index.html"
+                  >
+                    <i class="fa-solid fa-laptop sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Devices </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../agriculture/users/index.html"
+                  >
+                    <i class="fa-solid fa-user sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Users </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../agriculture/devices-report/index.html"
+                  >
+                    <i class="fa-solid fa-file sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Device Reports </span>
+                  </a>
+                </li>
+                <h6
+                  class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                  style="font-weight: 600"
+                >
+                  Haat Bazaar
+                </h6>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light sidebar-list-color"
+                    aria-current="page"
+                    href="../../haat-bazaar/category-subcategory/index.html"
+                  >
+                    <i class="fa-solid fa-list sidebar-list-color"></i
+                    ><span class="sidebar-list-color">
+                      Category | Subcategory</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../haat-bazaar/devices/index.html"
+                  >
+                    <i
+                      class="fa-solid fa-desktop sidebar-list-color sidebar-list-color"
+                    ></i>
+                    <span class="sidebar-list-color"> Devices </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../haat-bazaar/devices-report/index.html"
+                  >
+                    <i class="fa-solid fa-list sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Devices Reports </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../haat-bazaar/fiscal-report/index.html"
+                  >
+                    <i class="fa-solid fa-file sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Fiscal Report </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 text-light"
+                    href="../../haat-bazaar/ticket-information/index.html"
+                  >
+                    <i class="fa-solid fa-ticket sidebar-list-color"></i>
+                    <span class="sidebar-list-color">Ticket Information</span>
                   </a>
                 </li>
                 <h6
@@ -259,7 +405,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="./scroll-news.html"
+                    href="../../scroll-news/scroll-news.html"
                   >
                     <i class="fa-solid fa-newspaper sidebar-list-color"></i>
                     <span class="sidebar-list-color"> Scroll News </span>
@@ -319,7 +465,7 @@
                     class="bg-custom-dark rounded-1 d-flex align-items-center justify-content-center p-2"
                   >
                     <img
-                      src="../Images/icons8-forward-arrow-50.png"
+                      src="../../../Images/icons8-forward-arrow-50.png"
                       alt=""
                       style="height: 25px"
                     />
@@ -376,7 +522,9 @@
                 </div>
               </div>
             </div>
-            <div class="table-responsive small category-tbl mt-4 bg-light p-2">
+            <div
+              class="table-responsive bg-light p-2 mt-4 small category-tbl mt-4 bg-light p-2"
+            >
               <table class="table table-striped-columns" id="myTable">
                 <thead>
                   <tr>
@@ -451,6 +599,15 @@
         buttons: ["excel", "pdf", "print"],
       },
     },
+    language: {
+      paginate: {
+        previous:
+          '<span><a href="#" class="text-light text-decoration-none">Prev</a></span>',
+        next: '<span><a href="#" class="text-light text-decoration-none">Next</a></span>',
+        first:
+          '<span><a href="#" class="text-light text-decoration-none">First</a></span>',
+        last: '<span><a href="#" class="text-light text-decoration-none">Last</a></span>',
+      },
+    },
   });
 </script>
-<script src="../script.js"></script>

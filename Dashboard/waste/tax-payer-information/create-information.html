@@ -258,10 +258,10 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="../devices/waste-device.html"
+                    href="../../waste/devices/waste-device.html"
                   >
-                    <i class="fa-solid fa-laptop"></i>
-                    <span class=""> Devices </span>
+                    <i class="fa-solid fa-laptop sidebar-list-color"></i>
+                    <span class="sidebar-list-color"> Devices </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -285,12 +285,10 @@
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 text-light"
-                    href="../../waste/tax-payer-information/index.html"
+                    href="#"
                   >
-                    <i class="fa-solid fa-circle-info sidebar-list-color"></i>
-                    <span class="sidebar-list-color">
-                      Tax Payer Information
-                    </span>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class=""> Tax Payer Information </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -483,7 +481,9 @@
                       style="font-size: 12px"
                     >
                       Waste /
-                      <span class="active-custom-color">Create Device</span>
+                      <span class="active-custom-color"
+                        >Create Tax Payer Information</span
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -492,27 +492,43 @@
             <div class="card px-5 pt-5 pb-5">
               <form class="create-form-container">
                 <div class="row mb-3">
-                  <div class="col-md-6 mb-3">
-                    <label for="first-name" class="form-label"
-                      >First Name</label
-                    >
-                    <input type="text" class="form-control" id="first-name" />
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" />
                   </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="last-name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" />
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label">House No.</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <label class="form-label">Phone No.</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col-12 col-md-6">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" />
+                  <div class="col-md-4">
+                    <label class="form-label">Citizenship No.</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label">Hint No.</label>
+                    <input type="text" class="form-control" />
                   </div>
 
-                  <div class="col-md-6">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" />
+                  <div class="col-md-4">
+                    <label class="form-label">Category</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div>
@@ -537,9 +553,3 @@
     <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
   </body>
 </html>
-<script>
-  $(document).ready(function () {
-    $("#myTable").DataTable();
-  });
-</script>
-<script src="../script.js"></script>
