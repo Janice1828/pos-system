@@ -182,3 +182,31 @@ table tr td {
 .dt-layout-table {
   margin: 25px 0px !important;
 }
+/* For Report printing of Waste User */
+@media print {
+  .waste-user-report-container .sidebar,
+  .waste-user-report-container .offcanvas-md,
+  .waste-user-report-container #print-report-btn,
+  .waste-user-report-container header {
+    display: none !important;
+  }
+  .waste-user-report-container .card {
+    padding: 0px !important;
+    border: 0 !important;
+  }
+  .waste-user-report-container main {
+    background: #fff !important;
+  }
+  .waste-user-report-container p,
+  .waste-user-report-container table thead tr th,
+  .waste-user-report-container table tbody tr td,
+  .waste-user-report-container label {
+    font-size: 10px !important;
+  }
+  .waste-user-report-container h6 {
+    font-size: 12px !important;
+  }
+  .gov-headings {
+    margin-top: 10px;
+  }
+}

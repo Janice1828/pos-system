@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+  </head>
+  <body>
+    <div class="waste-user-report-container">
+      <div
+        class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+      >
+        <button
+          class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+          id="bd-theme"
+          type="button"
+          aria-expanded="false"
+          data-bs-toggle="dropdown"
+          aria-label="Toggle theme (light)"
+        >
+          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-end shadow"
+          aria-labelledby="bd-theme-text"
+        >
+          <li>
+            <button
+              type="button"
+              class="dropdown-item d-flex align-items-center active"
+              data-bs-theme-value="light"
+              aria-pressed="true"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item d-flex align-items-center"
+              data-bs-theme-value="dark"
+              aria-pressed="false"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item d-flex align-items-center"
+              data-bs-theme-value="auto"
+              aria-pressed="false"
+            >
+              Auto
+            </button>
+          </li>
+        </ul>
+      </div>
+      <header
+        class="navbar sticky-top d-flex d-md-none bg-custom-dark flex-md-nowrap p-0 shadow"
+        data-bs-theme="dark"
+      >
+        <a
+          class="navbar-brand col-md-3 py-3 col-lg-2 me-0 px-3 fs-6 text-white"
+          href="#"
+          >e-Ticketing
+        </a>
+
+        <ul class="navbar-nav flex-row d-md-none">
+          <li class="nav-item text-nowrap">
+            <button
+              class="nav-link px-3 text-white"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebarMenu"
+              aria-controls="sidebarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </li>
+        </ul>
+
+        <div id="navbarSearch" class="navbar-search w-100 collapse">
+          <input
+            class="form-control w-100 rounded-0 border-0"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="sidebar col-md-3 col-lg-2 p-0 bg-custom-dark text-light sidebar-h-100-vh"
+          >
+            <div
+              class="offcanvas-md offcanvas-end bg-custom-dark position-fixed"
+              style="
+                height: 100%;
+                overflow-y: auto !important;
+                width: inherit !important;
+                scrollbar-width: thin;
+              "
+              tabindex="-1"
+              id="sidebarMenu"
+              aria-labelledby="sidebarMenuLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-center text-light"
+                  id="sidebarMenuLabel"
+                >
+                  e-Ticketing
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-light"
+                  data-bs-dismiss="offcanvas"
+                  data-bs-target="#sidebarMenu"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+              >
+                <h6
+                  class="px-3 sidebar-list-color sidebar-title-bg py-2 mb-0"
+                  style="font-weight: 600"
+                >
+                  Main
+                </h6>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      aria-current="page"
+                      href="../../index.html"
+                    >
+                      <i
+                        class="fa-solid fa-chart-simple sidebar-list-color"
+                      ></i>
+                      <span class="sidebar-list-color"> Dashboard</span>
+                    </a>
+                  </li>
+
+                  <h6
+                    class="px-3 sidebar-title-bg py-2 mb-0 mt-2 sidebar-list-color"
+                    style="font-weight: 600"
+                  >
+                    SetUp
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      aria-current="page"
+                      href="../../setup/system-setup.html"
+                    >
+                      <i class="fa-solid fa-computer sidebar-list-color"></i
+                      ><span class="sidebar-list-color"> System </span>
+                    </a>
+                  </li>
+                  <h6
+                    class="px-3 sidebar-title-bg py-2 mb-0 mt-2 sidebar-list-color"
+                    style="font-weight: 600"
+                  >
+                    Shree Antu
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      aria-current="page"
+                      href="../../shree-antu/category-subcategory/category-subcategory.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i
+                      ><span class="sidebar-list-color">
+                        Category | Subcategory</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../shree-antu/devices/devices.html"
+                    >
+                      <i
+                        class="fa-solid fa-desktop sidebar-list-color sidebar-list-color"
+                      ></i>
+                      <span class="sidebar-list-color"> Devices </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../shree-antu/devices-report/devices-report.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Devices Reports </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../shree-antu/fiscal-report/fiscal-report.html"
+                    >
+                      <i class="fa-solid fa-file sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Fiscal Report </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../shree-antu/ticket-information/index.html"
+                    >
+                      <i class="fa-solid fa-ticket sidebar-list-color"></i>
+                      <span class="sidebar-list-color">Ticket Information</span>
+                    </a>
+                  </li>
+                  <h6
+                    class="px-3 sidebar-title sidebar-title-bg py-2 mb-0 mt-2 text-light"
+                    style="font-weight: 600"
+                  >
+                    Waste
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../tole/tole.html"
+                    >
+                      <i
+                        class="fa-solid fa-location-arrow sidebar-list-color"
+                      ></i>
+                      <span class="sidebar-list-color"> Tole </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../waste/category/waste-category.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Category </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../waste/devices/waste-device.html"
+                    >
+                      <i class="fa-solid fa-laptop sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Devices </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../users/waste-users.html"
+                    >
+                      <i class="fa-solid fa-user-group"></i>
+                      <span class=""> Users </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../waste/device-reports/device-report.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Device Reports </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../waste/tax-payer-information/index.html"
+                    >
+                      <i class="fa-solid fa-circle-info sidebar-list-color"></i>
+                      <span class="sidebar-list-color">
+                        Tax Payer Information
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../waste/billing/index.html"
+                    >
+                      <i class="fa-solid fa-receipt sidebar-list-color"></i>
+                      <span class="sidebar-list-color">
+                        Billing Information
+                      </span>
+                    </a>
+                  </li>
+                  <h6
+                    class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                    style="font-weight: 600"
+                  >
+                    Agriculture
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../agriculture/category/index.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Category </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../agriculture/devices/index.html"
+                    >
+                      <i class="fa-solid fa-laptop sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Devices </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../agriculture/users/index.html"
+                    >
+                      <i class="fa-solid fa-user sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Users </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../agriculture/devices-report/index.html"
+                    >
+                      <i class="fa-solid fa-file sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Device Reports </span>
+                    </a>
+                  </li>
+                  <h6
+                    class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                    style="font-weight: 600"
+                  >
+                    Haat Bazaar
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light sidebar-list-color"
+                      aria-current="page"
+                      href="../../haat-bazaar/category-subcategory/index.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i
+                      ><span class="sidebar-list-color">
+                        Category | Subcategory</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../haat-bazaar/devices/index.html"
+                    >
+                      <i
+                        class="fa-solid fa-desktop sidebar-list-color sidebar-list-color"
+                      ></i>
+                      <span class="sidebar-list-color"> Devices </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../haat-bazaar/devices-report/index.html"
+                    >
+                      <i class="fa-solid fa-list sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Devices Reports </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../haat-bazaar/fiscal-report/index.html"
+                    >
+                      <i class="fa-solid fa-file sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Fiscal Report </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../haat-bazaar/ticket-information/index.html"
+                    >
+                      <i class="fa-solid fa-ticket sidebar-list-color"></i>
+                      <span class="sidebar-list-color">Ticket Information</span>
+                    </a>
+                  </li>
+                  <h6
+                    class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
+                    style="font-weight: 600"
+                  >
+                    scroll news
+                  </h6>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2 text-light"
+                      href="../../scroll-news/scroll-news.html"
+                    >
+                      <i class="fa-solid fa-newspaper sidebar-list-color"></i>
+                      <span class="sidebar-list-color"> Scroll News </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <main
+            class="col-md-9 ms-sm-auto col-lg-10"
+            style="background: #f3f3f3"
+          >
+            <div class="px-md-5">
+              <div class="mt-3 card px-5 pt-5 pb-5">
+                <div class="income-receipt-container">
+                  <div
+                    class="d-flex justify-content-between align-items-lg-end align-items-center mb-2 flex-lg-row flex-column"
+                  >
+                    <div>
+                      <div class="d-flex justify-content-center d-lg-block">
+                        <img
+                          style="width: 100px"
+                          src="../Images/Emblem_of_Nepal.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0 mt-2">
+                        <label for="">रशिद न.</label
+                        ><input
+                          type="text"
+                          style="
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px dotted;
+                            padding-left: 5px;
+                          "
+                        />
+                      </p>
+                    </div>
+                    <div class="text-center gov-headings">
+                      <p class="mb-0">नेपाल सरकार</p>
+                      <p class="mb-0">सूर्योदय नगरपालिका</p>
+                      <h6 class="fw-bold mb-0">नगर कार्यपालिकाको कार्यालय</h6>
+                      <p class="mb-0">फिक्कल, इलाम</p>
+                      <h6 class="fw-bold mb-0">आम्दानी-रसिद</h6>
+                      <p>(फोहोरमैला संकलन गर्ने प्रयोजनको लागि)</p>
+                    </div>
+                    <div>
+                      <label for="">मिति:</label>
+                      <input
+                        type="text"
+                        style="
+                          outline: none;
+                          border: none;
+                          border-bottom: 1px dotted;
+                          padding-left: 5px;
+                        "
+                      />
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column flex-lg-row">
+                    <div>
+                      <label for="">सूर्योदय नगरपालिका वडा नं.</label>
+                      <input
+                        type="text"
+                        style="
+                          outline: none;
+                          border: none;
+                          padding-left: 5px;
+                          border-bottom: 1px dotted !important;
+                        "
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <label for="">निवासी श्री</label>
+                      <input
+                        type="text"
+                        style="
+                          outline: none;
+                          border: none;
+                          padding-left: 5px;
+                          border-bottom: 1px dotted !important;
+                        "
+                      />
+                    </div>
+                    <div>
+                      <label for="">बाट जम्मा रु.</label>
+                      <input
+                        type="text"
+                        style="
+                          outline: none;
+                          border: none;
+                          padding-left: 5px;
+                          border-bottom: 1px dotted !important;
+                        "
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3 mt-2 align-items-center">
+                    <label class="mb-0">अक्षरेपी</label>
+                    <input
+                      type="text"
+                      class="w-75"
+                      style="
+                        outline: none;
+                        border: none;
+                        padding-left: 5px;
+                        border-bottom: 1px dotted !important;
+                      "
+                    />
+                    <label class="mb-0">बापत प्राप्त भयो</label>
+                  </div>
+                  <div></div>
+                  <div class="table-responsive bg-light p-2 mt-4">
+                    <table class="table table-bordered border-dark">
+                      <thead>
+                        <tr>
+                          <th rowspan="2" class="text-center">
+                            <span style="position: relative; bottom: 20px"
+                              >शीर्षक न.</span
+                            >
+                          </th>
+                          <th rowspan="2" class="text-center">
+                            <span style="position: relative; bottom: 20px"
+                              >विवरण</span
+                            >
+                          </th>
+                          <th colspan="3" class="text-center">रकम</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center">नगद</th>
+                          <th class="text-center">भौचर</th>
+                          <th class="text-center">जम्मा</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="text-end px-2">जम्मा</td>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                          <td><input type="text" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between flex-column flex-sm-row gap-2"
+                  >
+                    <div>
+                      <label class="mb-0 d-block">बुझाउने दस्तखत</label>
+                      <input
+                        type="text"
+                        style="
+                          outline: none;
+                          border: none;
+                          padding-left: 5px;
+                          border-bottom: 1px dotted !important;
+                        "
+                      />
+                    </div>
+                    <div class="d-flex d-sm-block flex-column gap-2">
+                      <div
+                        class="d-flex align-items-sm-center align-items-start flex-column flex-sm-row"
+                      >
+                        <label class="mb-0">बुझिलिनेको सही</label>
+                        <input
+                          type="text"
+                          style="
+                            outline: none;
+                            border: none;
+                            padding-left: 5px;
+                            border-bottom: 1px dotted !important;
+                          "
+                        />
+                      </div>
+                      <div
+                        class="d-flex align-items-start flex-column flex-sm-row"
+                      >
+                        <label class="mb-0">दर्जा</label>
+                        <input
+                          type="text"
+                          style="
+                            outline: none;
+                            border: none;
+                            padding-left: 5px;
+                            border-bottom: 1px dotted !important;
+                          "
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button
+                    class="btn btn-danger py-1"
+                    style="font-size: 14px"
+                    onclick="printReport()"
+                    id="print-report-btn"
+                  >
+                    Print Report
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8508bb06d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<script>
+  function printReport() {
+    window.print();
+  }
+</script>
