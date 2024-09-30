@@ -311,3 +311,19 @@ table tr td {
     font-size: 12px !important;
   }
 }
+.collect-tax-container h6 {
+  font-weight: 600;
+}
+.collect-tax-container p,
+.collect-tax-container span,
+.collect-tax-container label,
+.collect-tax-container table thead tr th {
+  font-size: 15px;
+}
+.collect-tax-container input:focus {
+  box-shadow: none !important;
+}
+.collect-tax-container b {
+  font-weight: 600;
+  font-size: 15px;
+}
