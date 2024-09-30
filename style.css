@@ -270,20 +270,44 @@ table tr td {
   .haat-bazaar-ticket-container header {
     display: none !important;
   }
-  .haat-bazaar-ticket-container .card {
-    padding: 0px !important;
-    border: 0 !important;
-  }
+
   .haat-bazaar-ticket-container main {
     background: #fff !important;
   }
-  .haat-bazaar-ticket-container p,
-  .haat-bazaar-ticket-container table thead tr th,
-  .haat-bazaar-ticket-container table tbody tr td,
-  .haat-bazaar-ticket-container label {
+}
+.agriculture-report-container textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  resize: none;
+}
+.agriculture-report-container table tbody tr td {
+  padding: 0px !important;
+}
+/* Agriculture Print Report */
+@media print {
+  .agriculture-report-container .sidebar,
+  .agriculture-report-container .offcanvas-md,
+  .agriculture-report-container #ticket-print-btn,
+  .agriculture-report-container header {
+    display: none !important;
+  }
+  .agriculture-report-container .card {
+    padding: 0px !important;
+    border: 0 !important;
+  }
+  .agriculture-report-container main {
+    background: #fff !important;
+  }
+  .agriculture-report-container p,
+  .agriculture-report-container table thead tr th,
+  .agriculture-report-container table tbody tr td,
+  .agriculture-report-container label {
     font-size: 10px !important;
   }
-  .haat-bazaar-ticket-container h6 {
+  .agriculture-report-container h6 {
     font-size: 12px !important;
   }
 }

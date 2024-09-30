@@ -23,7 +23,7 @@
     ></script>
   </head>
   <body>
-    <div class="haat-bazaar-ticket-container">
+    <div class="agriculture-report-container">
       <div
         class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
       >
@@ -308,7 +308,7 @@
                     </a>
                   </li>
                   <h6
-                    class="px-3 mt-2 mb-0 py-2 sidebar-title-bg sidebar-list-color"
+                    class="px-3 mt-2 mb-0 py-2 sidebar-title-bg text-light"
                     style="font-weight: 600"
                   >
                     Agriculture
@@ -316,7 +316,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link d-flex align-items-center gap-2 text-light"
-                      href="../../agriculture/category/index.html"
+                      href="../category/index.html"
                     >
                       <i class="fa-solid fa-list sidebar-list-color"></i>
                       <span class="sidebar-list-color"> Category </span>
@@ -334,10 +334,10 @@
                   <li class="nav-item">
                     <a
                       class="nav-link d-flex align-items-center gap-2 text-light"
-                      href="../../agriculture/tax-payer-information/index.html"
+                      href="./index.html"
                     >
-                      <i class="fa-solid fa-user sidebar-list-color"></i>
-                      <span class="sidebar-list-color"> Users </span>
+                      <i class="fa-solid fa-info-circle"></i>
+                      <span class=""> Tax Payer Information </span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -350,7 +350,7 @@
                     </a>
                   </li>
                   <h6
-                    class="px-3 mt-2 mb-0 py-2 sidebar-title-bg text-light"
+                    class="px-3 sidebar-list-color mt-2 mb-0 py-2 sidebar-title-bg"
                     style="font-weight: 600"
                   >
                     Haat Bazaar
@@ -370,9 +370,11 @@
                   <li class="nav-item">
                     <a
                       class="nav-link d-flex align-items-center gap-2 text-light"
-                      href="../devices/index.html"
+                      href="../../haat-bazaar/devices/index.html"
                     >
-                      <i class="fa-solid fa-desktop sidebar-list-color"></i>
+                      <i
+                        class="fa-solid fa-desktop sidebar-list-color sidebar-list-color"
+                      ></i>
                       <span class="sidebar-list-color"> Devices </span>
                     </a>
                   </li>
@@ -397,10 +399,10 @@
                   <li class="nav-item">
                     <a
                       class="nav-link d-flex align-items-center gap-2 text-light"
-                      href="./index.html"
+                      href="../../haat-bazaar/ticket-information/index.html"
                     >
-                      <i class="fa-solid fa-ticket"></i>
-                      <span class="">Ticket Information</span>
+                      <i class="fa-solid fa-ticket sidebar-list-color"></i>
+                      <span class="sidebar-list-color">Ticket Information</span>
                     </a>
                   </li>
                   <h6
@@ -426,114 +428,147 @@
             class="col-md-9 ms-sm-auto col-lg-10"
             style="background: #f3f3f3"
           >
-            <div class="px-md-5 px-3 mb-5 mt-3">
-              <div class="weekly-market-container">
+            <div class="px-md-5 px-3 mb-5">
+              <div class="cash-receipt-container card p-5 mt-2">
                 <div
-                  class="card m-auto border border-2 border-black rounded-0"
-                  style="width: 600px"
+                  class="d-flex justify-content-between flex-column flex-lg-row align-items-center gap-2 mb-2"
                 >
-                  <div class="card-body">
-                    <div class="d-flex gap-5 align-items-center">
-                      <div>
-                        <img
-                          src="../../../Images/Emblem_of_Nepal.svg"
-                          style="width: 70px"
-                          alt=""
-                        />
-                        <p class="pt-1">आ.व. ०७६/७७</p>
-                      </div>
-                      <div class="text-center">
-                        <h6 class="fw-bold">सूर्योदय नगरपालिका</h6>
-                        <h5 class="fw-bold">नगर कार्यपालिकाको कार्यालय</h5>
-                        <h6 class="fw-bold">फिक्कल, इलाम</h6>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <label for="">मितिः</label>
-                        <input
-                          type="text"
-                          style="
-                            outline: none;
-                            width: 80px;
-                            border-bottom: 1px dotted !important;
-                            border: none;
-                          "
-                          class=""
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <p>र.नं.:</p>
-                      <p
-                        class="fw-bold fs-5 text-light px-3 py-1"
-                        style="background: #24267c"
-                      >
-                        साप्ताहिक हाट बजारको लागि
-                      </p>
-                      <p></p>
-                    </div>
-                    <div class="d-flex">
-                      <label for="">श्री</label>
-                      <input
-                        type="text"
-                        class="border-0 w-100"
+                  <div class="text-center">
+                    <img
+                      src="../Images/Emblem_of_Nepal.svg"
+                      style="width: 100px"
+                      alt=""
+                    />
+                    <div class="d-flex mt-2">
+                      <label for="">रसिद नं.</label
+                      ><input
                         style="
-                          border-bottom: 1px dotted !important;
+                          border: none;
                           outline: none;
+                          border-bottom: 1px dotted !important;
                           padding-left: 5px;
                         "
+                        type="text"
                       />
-                      <span>बाट</span>
-                    </div>
-                    <div class="d-flex mt-2 mb-2 gap-5 align-items-center">
-                      <p class="mb-0">बहाल विरौटी कर वापत शुल्क रु.</p>
-                      <h5
-                        class="fw-bold border border-3 py-2 px-3 rounded-3"
-                        style="border-color: #24267c !important; color: #24267c"
-                      >
-                        ५०/-
-                      </h5>
-                    </div>
-                    <div>अक्षरेपी पचास मात्र स-धन्यवाद प्राप्त भयो ।</div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-center">
-                        <input
-                          type="text"
-                          class="border-0 border-bottom border-dark"
-                          style="
-                            outline: none;
-                            border-bottom: 2px solid #24267c !important;
-                            width: 140px;
-                          "
-                        />
-                        <p class="pt-1">बुझाउनेको सही</p>
-                      </div>
-                      <div class="text-center">
-                        <input
-                          type="text"
-                          style="
-                            outline: none;
-                            border-bottom: 2px solid #24267c !important;
-                            width: 140px;
-                          "
-                          class="border-0"
-                        />
-                        <p class="pt-1">बुझिलिनेको सही</p>
-                      </div>
                     </div>
                   </div>
-                  <div class="text-center mb-2">
-                    <button
-                      class="btn btn-danger py-1"
-                      style="font-size: 14px"
-                      id="ticket-print-btn"
-                      onclick="printTicket()"
-                    >
-                      Print Ticket
-                    </button>
+                  <div class="text-center">
+                    <h6 class="fw-bold">सूर्योदय नगरपालिका</h6>
+                    <h6 class="fw-bold">नगरकार्यपालिकाको कार्यालय</h6>
+                    <p class="fw-bold mb-1">फिक्कल, इलाम</p>
+                    <p class="fw-bold mb-1">
+                      कृषिजन्य वस्तुको व्यवसायिक कारोबारमा लाग्ने कर असुली
+                    </p>
+                    <h6 class="fw-bold">नगदी-रसिद</h6>
                   </div>
+                  <div class="d-flex align-items-center">
+                    <label>मिति</label>
+                    <input
+                      type="text"
+                      style="
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px dotted !important;
+                        padding-left: 5px;
+                      "
+                    />
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-between mb-2 flex-column flex-sm-row"
+                >
+                  <div>
+                    <label>श्री :</label>
+                    <input
+                      type="text"
+                      style="
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px dotted !important;
+                      "
+                    />
+                  </div>
+                  <div>
+                    <label>ठेगाना :</label>
+                    <input
+                      type="text"
+                      style="
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px dotted !important;
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="table-responsive p-2 mt-4">
+                  <table class="table table-bordered border-dark">
+                    <thead>
+                      <tr>
+                        <th style="width: 50px" class="text-center">क्र.सं.</th>
+                        <th class="text-center">विवरण/वापत</th>
+                        <th class="text-center">आम्दानी संकेत नं.</th>
+                        <th class="text-center">रकम</th>
+                        <th class="text-center">कैफियत</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="2">
+                          <textarea name="" id=""></textarea>
+                        </td>
+                        <td rowspan="2">
+                          <textarea name="" id=""></textarea>
+                        </td>
+                        <td><textarea name="" id=""></textarea></td>
+                        <td><textarea name="" id=""></textarea></td>
+                        <td><textarea name="" id=""></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex justify-content-end px-2">
+                            <span>जम्मा</span>
+                          </div>
+                        </td>
+                        <td colspan="2"><input type="text" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">
+                          <div class="d-flex gap-2 py-1 px-2">
+                            <label for="">अक्षरेपी रु.</label>
+                            <input
+                              class="w-50"
+                              type="text"
+                              style="
+                                border: none;
+                                outline: none;
+                                border-bottom: 1px dotted;
+                                padding-left: 5px;
+                              "
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">
+                          <div class="d-flex justify-content-between">
+                            <p class="mb-0 py-1 px-2">रकम बुझाउनेको सही :</p>
+                            <p class="mb-0 py-1">रकम बुझ्नेको सही :</p>
+                            <p></p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-danger py-1"
+                    style="font-size: 14px"
+                    onclick="printReport()"
+                    id="ticket-print-btn"
+                  >
+                    Print Report
+                  </button>
                 </div>
               </div>
             </div>
@@ -541,7 +576,6 @@
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -551,10 +585,11 @@
       src="https://kit.fontawesome.com/8508bb06d2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
   </body>
 </html>
 <script>
-  const printTicket = () => {
-    window.print();
+  const printReport = () => {
+    print();
   };
 </script>
