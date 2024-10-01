@@ -320,10 +320,28 @@ table tr td {
 .collect-tax-container table thead tr th {
   font-size: 15px;
 }
+.collect-tax-container table tbody tr td {
+  font-size: 14px;
+}
 .collect-tax-container input:focus {
   box-shadow: none !important;
 }
+.collect-tax-container textarea:focus {
+  box-shadow: none;
+  resize: none;
+}
+
 .collect-tax-container b {
   font-weight: 600;
   font-size: 15px;
+}
+.collect-tax-container table thead tr th,
+.collect-tax-container table tbody tr td {
+  background-color: transparent;
+}
+.data {
+  color: #000;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
 }

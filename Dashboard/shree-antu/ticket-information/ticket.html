@@ -505,7 +505,30 @@
                           नेपाली नागरिक
                         </td>
                         <td class="text-center" style="font-size: 14px">
-                          रु. ५०/-
+                          <input
+                            type="text"
+                            class="data border-0 bg-transparent outine-none"
+                            value="100"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>२.</td>
+                        <td class="px-2" style="font-size: 14px">
+                          नेपाली नागरिक
+                        </td>
+                        <td class="text-center" style="font-size: 14px">
+                          <input type="text" class="border-0 data" value="50" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div class="d-flex justify-content-end px-2">
+                            जम्मा
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <span id="total"></span>
                         </td>
                       </tr>
                       <tr>
@@ -593,4 +616,11 @@
   const printTicket = () => {
     window.print();
   };
+  const datas = document.querySelectorAll(".data");
+  const amounts = [];
+  datas.forEach((item) => {
+    amounts.push(Number(item.value));
+  });
+  const totalAmt = amounts.reduce((accum, nextValue) => accum + nextValue);
+  document.getElementById("total").innerHTML = totalAmt;
 </script>
