@@ -498,19 +498,15 @@
                 </div>
               </div>
               <div
-                class="card pt-2 pb-1 px-3 border-0 pt-3 pb-2"
-                style="background-color: #6a994e"
+                class="card pt-2 bg-custom-dark pb-1 px-3 border-0 pt-3 pb-2 rounded-0"
               >
                 <h5 class="text-light fw-normal">Tax Payer Details</h5>
               </div>
-              <div class="card mt-2">
-                <div
-                  class="card-header border-0"
-                  style="background-color: #6a994e"
-                >
+              <div class="card mt-2 rounded-0">
+                <div class="card-header border-0 rounded-0 bg-custom-dark">
                   <h5 class="text-light fw-normal">
                     Tax Payer
-                    <span style="color: #000; font-size: inherit"
+                    <span style="color: #ffff; font-size: inherit"
                       >Jenish Limbu's</span
                     >
                     - Personal Details
@@ -546,11 +542,41 @@
                   </div>
                 </div>
               </div>
-              <div class="card mt-5">
-                <div
-                  class="card-header border-0"
-                  style="background-color: #6a994e"
-                >
+              <div class="card mt-3 rounded-0">
+                <div class="card-header bg-custom-dark text-light rounded-0">
+                  <h5 class="text-light fw-normal">History</h5>
+                </div>
+                <div class="card-content" style="background: #fff7e6">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Due Amount</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jenish limbu</td>
+                        <td>2024-01-12</td>
+                        <td>5000</td>
+                        <td>5000</td>
+                        <td>
+                          <a
+                            href="./report.html"
+                            class="btn btn-outline-success py-1"
+                            >View Report</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card mt-3 rounded-0">
+                <div class="card-header border-0 rounded-0 bg-custom-dark">
                   <h5 class="text-light fw-normal">Service Charge</h5>
                 </div>
                 <div
@@ -559,7 +585,7 @@
                 >
                   <div class="card-content row">
                     <div
-                      class="col-lg-8 col-12 rounded-2 py-4"
+                      class="col-lg-8 col-12 rounded-0 py-4"
                       style="box-shadow: 0px 0px 3px 1px #c3c3c3"
                     >
                       <div class="d-flex gap-4">
@@ -590,7 +616,7 @@
                       </div>
                       <div class="border-top mt-4">
                         <div class="table-responsive">
-                          <table class="table">
+                          <table class="table table-striped">
                             <thead>
                               <tr>
                                 <th>Goods / Services</th>
@@ -599,9 +625,27 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr></tr>
+                              <tr>
+                                <td>Service One</td>
+                                <td>5000</td>
+                                <td>Completed</td>
+                              </tr>
                             </tbody>
                           </table>
+                        </div>
+                        <div>
+                          <label for="">Remarks</label>
+                          <textarea
+                            style="resize: none"
+                            name=""
+                            id=""
+                            class="form-control"
+                          ></textarea>
+                        </div>
+                        <div class="mt-3">
+                          <button class="btn btn-success px-4 py-1">
+                            Save
+                          </button>
                         </div>
                       </div>
                     </div>

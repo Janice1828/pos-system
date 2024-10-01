@@ -228,11 +228,16 @@ table tr td {
   .antu-ticket-container p,
   .antu-ticket-container table thead tr th,
   .antu-ticket-container table tbody tr td,
+  .antu-ticket-container table tbody tr div,
   .antu-ticket-container label {
     font-size: 10px !important;
   }
   .antu-ticket-container h6 {
     font-size: 12px !important;
+  }
+  .antu-ticket-container #receipt-no,
+  .antu-ticket-container #date {
+    width: 100px;
   }
 }
 .btn-toggle::after {
@@ -344,4 +349,81 @@ table tr td {
   font-weight: 600;
   outline: none;
   text-align: center;
+}
+@media print {
+  .income-receipt-container .nepal-gov-headings,
+  .income-receipt-container .personal-details {
+    flex-direction: row !important;
+  }
+  .income-receipt-container .personal-details input {
+    width: 130px !important;
+  }
+  .income-receipt-container .nepal-gov-headings input {
+    width: 100px;
+  }
+  .income-receipt-container .nepal-gov-headings img {
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+@media print {
+  .cash-receipt-container .municipality-headings {
+    flex-direction: row !important;
+  }
+  .cash-receipt-container .municipality-headings img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .cash-receipt-container .municipality-headings input {
+    width: 100px;
+  }
+  .cash-receipt-container table tbody tr td div p {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .weekly-market-container .card-container {
+    width: 100% !important;
+  }
+}
+/* Weekly Haat Bazaar Print */
+@media print {
+  .weekly-market-container .municipality-img-w-3,
+  .weekly-market-container .municipality-header-w-3,
+  .weekly-market-container .municipality-header-date-w-3,
+  .weekly-market-container .weekly-haat-bazaar-w-3,
+  .weekly-market-container .receipt-no-w-3,
+  .weekly-market-container .print-w-3 {
+    width: 33.33% !important;
+  }
+  .weekly-market-container .card-container {
+    width: 80% !important;
+    border: 1px solid !important;
+  }
+  .weekly-market-container h5 {
+    font-size: 12px !important;
+  }
+  .weekly-market-container h6 {
+    font-size: 10px !important;
+  }
+  .weekly-market-container p,
+  .weekly-market-container div,
+  .weekly-market-container label {
+    font-size: 10px !important;
+  }
+  .weekly-market-container img {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .weekly-market-container .ticket-price {
+    border: 1px solid !important;
+  }
+  .weekly-market-container .signatures input {
+    border-bottom: 1px solid !important;
+  }
+}
+@media print {
+  .antu-ticket-container .municipality-header {
+    flex-direction: row !important;
+  }
 }
