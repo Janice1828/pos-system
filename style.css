@@ -209,6 +209,21 @@ table tr td {
   .gov-headings {
     margin-top: 10px;
   }
+  .waste-user-report-container table tbody tr:first-child td {
+    height: 50px !important;
+  }
+  .waste-user-report-container .border-divider {
+    margin: 20px 0px !important;
+  }
+  .waste-user-report-container .signatures {
+    flex-direction: row !important;
+  }
+  .waste-user-report-container .signatures input {
+    width: 100px;
+  }
+}
+.waste-user-report-container .border-divider {
+  border-bottom: 1px dotted !important;
 }
 /* Shree Antu Ticket Print */
 @media print {
@@ -314,6 +329,9 @@ table tr td {
   }
   .agriculture-report-container h6 {
     font-size: 12px !important;
+  }
+  .agriculture-report-container table tbody tr:first-child td {
+    height: 50px;
   }
 }
 .collect-tax-container h6 {
